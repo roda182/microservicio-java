@@ -1,5 +1,5 @@
-name: Bug
-description: File a bug report
+name: FR01 CASO DE NEGOCIO
+description: Formato que describe el caso de negocio
 body:
   - type: markdown
     attributes:
@@ -10,55 +10,64 @@ body:
         
         Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
   - type: input
-    id: os
+    id: in_proyecto
     attributes:
-      label: Operating system
-      description: "Which operating system do you use? Please provide the version as well."
-      placeholder: "macOS Big Sur 11.5.2"
+      label: Proyecto
+      description: "Ingresar el nombre completo del proyecto"
+      placeholder: "Portal de Proveedores V1"
     validations:
       required: true  
   - type: input
-    id: laravel
+    id: in_director
     attributes:
-      label: Laravel Version
-      description: "Please provide the full Laravel version of your project."
-      placeholder: "v8.6.1"
-    validations:
-      required: true
-  - type: input
-    id: php
-    attributes:
-      label: PHP Version
-      description: "Please provide the full PHP version that is powering Tinkerwell."
-      placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
+      label: Director de Proyecto
+      description: "Ingresar el nombre completo del Director del Proyecto."
+      placeholder: "Jose Carlos Torres Salas"
     validations:
       required: true
   - type: dropdown
-    id: location
+    id: in_area_solicitante
     attributes:
-      label: Project Location
-      description: Where is the project located?
+      label: Area Solicitante
+      description: "Seleccionar el area solicitante del proyecto."
       options:
-        - Local
-        - Remote
-        - Somewhere else (please specify in the description!)
+        - Compras
+        - Finanzas
+        - OGI
     validations:
       required: true
   - type: textarea
-    id: bug-description
+    id: in_necesidad_problema
     attributes:
-      label: Bug description
-      description: What happened?
+      label: Necesidad Social del Problema
+      description: Definir el problema, sus síntomas e identificar las causas principales que lo ocasionan, la necesidad de resolverlo y los principales stakeholders impactados.
     validations:
       required: true
   - type: textarea
-    id: steps
+    id: in_servicio
     attributes:
-      label: Steps to reproduce
-      description: Which steps do we need to take to reproduce this error?
+      label: Servicio
+      description: Descripción de la solución proporcionada por el proyecto indicando los principales entregables a alto nivel.
+    validations:
+      required: true
   - type: textarea
-    id: logs
+    id: in_valor_propuesta
     attributes:
-      label: Relevant log output
-      description: If applicable, provide relevant log output. No need for backticks here.
-      render: shell
+      label: Valor Publico, Propuesta de Valor
+      description: Valor público (abarca tres perspectivas orientas al usuario o beneficiario)
+    validations:
+      required: true
+ - type: textarea
+    id: in_relevancia
+    attributes:
+      label: Relevancia de la Estrategia
+      description: Destacar algo del procedimiento dispuesto para la toma de decisiones y/o para accionar frente a un determinado escenario
+    validations:
+      required: true
+- type: textarea
+    id: in_beneficiarios
+    attributes:
+      label: Benegiciarios
+      description: Identificar aquellas personas o entidades que son los beneficiarios directos (internos) de los resultados del proyecto y que por lo general pertenece a la organización que patrocina el proyecto.
+    validations:
+      required: true
