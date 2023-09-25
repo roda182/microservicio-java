@@ -1,5 +1,4 @@
 name: "FR01 CASO DE NEGOCIO"
-description: "Formato que describe el caso de negocio"
 body:
   - type: markdown
     attributes:
