@@ -1,5 +1,5 @@
-name: FR01 CASO DE NEGOCIO
-description: Formato que describe el caso de negocio
+name: "FR01 CASO DE NEGOCIO"
+description: "Formato que describe el caso de negocio"
 body:
   - type: markdown
     attributes:
@@ -40,34 +40,34 @@ body:
     id: in_necesidad_problema
     attributes:
       label: Necesidad Social del Problema
-      description: Definir el problema, sus síntomas e identificar las causas principales que lo ocasionan, la necesidad de resolverlo y los principales stakeholders impactados.
+      description: "Definir el problema, sus síntomas e identificar las causas principales que lo ocasionan, la necesidad de resolverlo y los principales stakeholders impactados."
     validations:
       required: true
   - type: textarea
     id: in_servicio
     attributes:
       label: Servicio
-      description: Descripción de la solución proporcionada por el proyecto indicando los principales entregables a alto nivel.
+      description: "Descripción de la solución proporcionada por el proyecto indicando los principales entregables a alto nivel."
     validations:
       required: true
   - type: textarea
     id: in_valor_propuesta
     attributes:
       label: Valor Publico, Propuesta de Valor
-      description: Valor público (abarca tres perspectivas orientas al usuario o beneficiario)
+      description: "Valor público (abarca tres perspectivas orientas al usuario o beneficiario)"
     validations:
       required: true
  - type: textarea
     id: in_relevancia
     attributes:
       label: Relevancia de la Estrategia
-      description: Destacar algo del procedimiento dispuesto para la toma de decisiones y/o para accionar frente a un determinado escenario
+      description: "Destacar algo del procedimiento dispuesto para la toma de decisiones y/o para accionar frente a un determinado escenario"
     validations:
       required: true
  - type: textarea
     id: in_beneficiarios
     attributes:
       label: Benegiciarios
-      description: Identificar aquellas personas o entidades que son los beneficiarios directos (internos) de los resultados del proyecto y que por lo general pertenece a la organización que patrocina el proyecto.
+      description: "Identificar aquellas personas o entidades que son los beneficiarios directos (internos) de los resultados del proyecto y que por lo general pertenece a la organización que patrocina el proyecto."
     validations:
       required: true
