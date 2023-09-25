@@ -1,16 +1,23 @@
 name: "FR01 CASO DE NEGOCIO"
 description: "Formato Caso de Negocio para proyectos"
 title: "[FR01] <title>"
-labels: ["FR01", "Needs Triage"]
+labels: ["FR01", "V1.0"]
 body:
   - type: markdown
     attributes:
       value: |
-        Before opening a bug report, please search for the behaviour in the existing issues. 
+        Cabecera. 
         
         ---
         
-        Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
+  - type: input
+    id: in_fecha
+    attributes:
+      label: Fecha
+      description: "Ingresar fecha de creación del proyecto"
+      placeholder: "02/10/2023"
+    validations:
+      required: true  
   - type: input
     id: in_proyecto
     attributes:
@@ -38,6 +45,13 @@ body:
         - OGI
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        Cuerpo. 
+        
+        ---
+        
   - type: textarea
     id: in_necesidad_problema
     attributes:
