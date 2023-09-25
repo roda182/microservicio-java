@@ -1,5 +1,7 @@
 name: "FR01 CASO DE NEGOCIO"
 description: "Formato Caso de Negocio para proyectos"
+title: "[FR01] <title>"
+labels: ["FR01", "Needs Triage"]
 body:
   - type: markdown
     attributes:
@@ -67,7 +69,42 @@ body:
   - type: textarea
     id: in_beneficiarios
     attributes:
-      label: Benegiciarios
+      label: Beneficiarios
       description: "Identificar aquellas personas o entidades que son los beneficiarios directos (internos) de los resultados del proyecto y que por lo general pertenece a la organización que patrocina el proyecto."
+    validations:
+      required: true
+  - type: textarea
+    id: in_medio_gestion
+    attributes:
+      label: Medios de Gestión
+      description: "Definir la estrategia de comunicación para visibilidad y ganar soporte interno."
+    validations:
+      required: true
+  - type: textarea
+    id: in_necesidades_org
+    attributes:
+      label: Necesidades Organizativas
+      description: "Supuestos asumidos o requerimientos necesarios para cumplir con el proyecto"
+    validations:
+      required: true
+  - type: textarea
+    id: in_stakeholders_claves
+    attributes:
+      label: Stakeholders claves
+      description: "Identificar a los principales auspiciadores o interesados en el proyecto."
+    validations:
+      required: true
+  - type: textarea
+    id: in_metricas
+    attributes:
+      label: Métricas
+      description: "Identificar las principales variables que pueda ser usada para medir el desempeño y éxito del proyecto y que sean relevantes para un público en general."
+    validations:
+      required: true
+  - type: textarea
+    id: in_Riesgos
+    attributes:
+      label: Riesgos
+      description: "Lo negativo de los Supuestos + Factores externos + Acciones por parte de stakeholders que estén en contra del proyecto."
     validations:
       required: true
