@@ -1,0 +1,142 @@
+name: "FR10 ACTA DE CONSTITUCIÓN"
+description: "Formato Acta de Constitución para proyectos"
+title: "[FR01] <title>"
+labels: ["FR01", "V1.0"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cabecera. 
+        
+        ---
+        
+  - type: input
+    id: in_fecha
+    attributes:
+      label: Fecha
+      description: "Ingresar fecha de creación del proyecto"
+      placeholder: "02/10/2023"
+    validations:
+      required: true  
+  - type: input
+    id: in_proyecto
+    attributes:
+      label: Proyecto
+      description: "Ingresar el nombre completo del proyecto"
+      placeholder: "Portal de Proveedores V1"
+    validations:
+      required: true  
+  - type: input
+    id: in_director
+    attributes:
+      label: Director de Proyecto
+      description: "Ingresar el nombre completo del Director del Proyecto."
+      placeholder: "Jose Carlos Torres Salas"
+    validations:
+      required: true
+  - type: dropdown
+    id: in_area_solicitante
+    attributes:
+      label: Area Solicitante
+      description: "Seleccionar el area solicitante del proyecto."
+      options:
+        - Compras
+        - Finanzas
+        - OGI
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Cuerpo. 
+        
+        ---
+        
+  - type: textarea
+    id: in_necesidad_problema
+    attributes:
+      label: Necesidad Social del Problema
+      description: "Definir el problema, sus síntomas e identificar las causas principales que lo ocasionan, la necesidad de resolverlo y los principales stakeholders impactados."
+    validations:
+      required: true
+  - type: textarea
+    id: in_servicio
+    attributes:
+      label: Servicio
+      description: "Descripción de la solución proporcionada por el proyecto indicando los principales entregables a alto nivel."
+    validations:
+      required: true
+  - type: textarea
+    id: in_valor_propuesta
+    attributes:
+      label: Valor Publico, Propuesta de Valor
+      description: "Valor público (abarca tres perspectivas orientas al usuario o beneficiario)"
+    validations:
+      required: true
+  - type: textarea
+    id: in_relevancia
+    attributes:
+      label: Relevancia de la Estrategia
+      description: "Destacar algo del procedimiento dispuesto para la toma de decisiones y/o para accionar frente a un determinado escenario"
+    validations:
+      required: true
+  - type: textarea
+    id: in_beneficiarios
+    attributes:
+      label: Beneficiarios
+      description: "Identificar aquellas personas o entidades que son los beneficiarios directos (internos) de los resultados del proyecto y que por lo general pertenece a la organización que patrocina el proyecto."
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        
+        ---
+      
+  - type: textarea
+    id: in_medio_gestion
+    attributes:
+      label: Medios de Gestión
+      description: "Definir la estrategia de comunicación para visibilidad y ganar soporte interno."
+    validations:
+      required: true
+  - type: textarea
+    id: in_necesidades_org
+    attributes:
+      label: Necesidades Organizativas
+      description: "Supuestos asumidos o requerimientos necesarios para cumplir con el proyecto"
+    validations:
+      required: true
+  - type: textarea
+    id: in_stakeholders_claves
+    attributes:
+      label: Stakeholders claves
+      description: "Identificar a los principales auspiciadores o interesados en el proyecto."
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        
+        ---
+      
+  - type: textarea
+    id: in_metricas
+    attributes:
+      label: Métricas
+      description: "Identificar las principales variables que pueda ser usada para medir el desempeño y éxito del proyecto y que sean relevantes para un público en general."
+    validations:
+      required: true
+  - type: textarea
+    id: in_Riesgos
+    attributes:
+      label: Riesgos
+      description: "Lo negativo de los Supuestos + Factores externos + Acciones por parte de stakeholders que estén en contra del proyecto."
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        
+        ---
+      
