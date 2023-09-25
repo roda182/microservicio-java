@@ -1,4 +1,5 @@
 name: "FR01 CASO DE NEGOCIO"
+description: "Formato Caso de Negocio para proyectos"
 body:
   - type: markdown
     attributes:
@@ -56,14 +57,14 @@ body:
       description: "Valor público (abarca tres perspectivas orientas al usuario o beneficiario)"
     validations:
       required: true
- - type: textarea
+  - type: textarea
     id: in_relevancia
     attributes:
       label: Relevancia de la Estrategia
       description: "Destacar algo del procedimiento dispuesto para la toma de decisiones y/o para accionar frente a un determinado escenario"
     validations:
       required: true
- - type: textarea
+  - type: textarea
     id: in_beneficiarios
     attributes:
       label: Benegiciarios
