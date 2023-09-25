@@ -64,7 +64,7 @@ body:
       description: Destacar algo del procedimiento dispuesto para la toma de decisiones y/o para accionar frente a un determinado escenario
     validations:
       required: true
-- type: textarea
+ - type: textarea
     id: in_beneficiarios
     attributes:
       label: Benegiciarios
